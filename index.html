@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Midas Health</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Midas Technologies</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <!-- Bootstrap Icon -->
@@ -43,27 +41,31 @@
             class="main-nav d-flex align-items-center justify-content-between"
           >
             <ul class="list-unstyled d-flex gap-5 mb-0 me-5">
-              <li>
+              <!-- <li>
                 <a href="#">About</a>
-              </li>
+              </li> -->
               <li>
-                <a href="#">Products</a>
+                <a href="/#page-3">Products</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#">Careers</a>
+              </li> -->
+              <li>
+                <a href="./contact.html">Contact</a>
               </li>
             </ul>
-            <a href="#" class="btn btn-secondary"
-              >Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em
-            ></a>
+          
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em>
+            </button>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="content" role="main" id="main">
+    <main class="content home-page-scroll" role="main" id="main">
       <section data-anchor="page-1" class="billboard text-light">
-        <div class="container">
+        <div class="container billboard_container">
           <div class="row billboard_row align-items-center">
             <div class="col-md-6">
               <h1 class="mb-3 pb-1 fw-bold">
@@ -75,13 +77,13 @@
                 solution. Automate your healthcare operations with Midas Health
                 for better outcomes.
               </p>
-              <a href="#" class="btn btn-secondary"
-                >Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em
-              ></a>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em>
+              </button>
             </div>
             <div class="col-md-6 ps-5">
               <img
-                src="./assets/img//devicemockup.png"
+                src="./assets/img/midas-software.png"
                 class="img-fluid"
                 alt=""
               />
@@ -91,10 +93,10 @@
             <div class="container">
               <div class="d-flex gap-3 lead-section-wrapper">
                 <div class="lead-section_item shadow border">
-                  <div class="lead-section_item_icon">
+                  <div class="lead-section_item_icon bg-tertiary">
                     <!-- <em class="bi bi-hospital"></em> -->
                   </div>
-                  <h2 class="fw-bold lh-1 mb-1"><span class="count">15</span>M+</h2>
+                  <h2 class="fw-bold lh-1 mb-1"><span class="count count1" >15</span>M+</h2>
                   <h6>Patients <br/>Encounter</h6>
                 </div>
                 <!---lead-section_item-->
@@ -102,23 +104,23 @@
                   <div class="lead-section_item_icon bg-secondary">
                     <!-- <em class="bi bi-hospital"></em> -->
                   </div>
-                  <h2 class="fw-bold lh-1 mb-1"><span class="count">50</span>K+</h2>
+                  <h2 class="fw-bold lh-1 mb-1"><span class="count count2" >50</span>K+</h2>
                   <h6>Daily Patients <br/> Served</h6>
+                </div>
+                <!---lead-section_item-->
+                <div class="lead-section_item shadow border">
+                  <div class="lead-section_item_icon bg-purple">
+                    <!-- <em class="bi bi-hospital"></em> -->
+                  </div>
+                  <h2 class="fw-bold lh-1 mb-1"><span class="count count3" >25</span>K+</h2>
+                  <h6>HCMS <br/>Users</h6>
                 </div>
                 <!---lead-section_item-->
                 <div class="lead-section_item shadow border">
                   <div class="lead-section_item_icon bg-tertiary">
                     <!-- <em class="bi bi-hospital"></em> -->
                   </div>
-                  <h2 class="fw-bold lh-1 mb-1"><span class="count">25</span>K+</h2>
-                  <h6>Online Appointments</h6>
-                </div>
-                <!---lead-section_item-->
-                <div class="lead-section_item shadow border">
-                  <div class="lead-section_item_icon bg-primary">
-                    <!-- <em class="bi bi-hospital"></em> -->
-                  </div>
-                  <h2 class="fw-bold lh-1 mb-1"><span class="count">60</span>K+</h2>
+                  <h2 class="fw-bold lh-1 mb-1"><span class="count count4" >60</span>K+</h2>
                   <h6>Online
                     Appointments</h6>
                 </div>
@@ -127,15 +129,15 @@
                   <div class="lead-section_item_icon bg-secondary">
                     <!-- <em class="bi bi-hospital"></em> -->
                   </div>
-                  <h2 class="fw-bold lh-1 mb-1"><span class="count">50</span>K+</h2>
+                  <h2 class="fw-bold lh-1 mb-1"><span class="count count5" >50</span>K+</h2>
                   <h6>Teleconsultatios</h6>
                 </div>
                 <!---lead-section_item-->
                 <div class="lead-section_item shadow border">
-                  <div class="lead-section_item_icon bg-tertiary">
+                  <div class="lead-section_item_icon bg-purple">
                     <!-- <em class="bi bi-hospital"></em> -->
                   </div>
-                  <h2 class="fw-bold lh-1 mb-1"><span class="count">200</span>K+</h2>
+                  <h2 class="fw-bold lh-1 mb-1"><span class="count count6">200</span>K+</h2>
                   <h6>Mero Doctor
                     Downloads</h6>
                 </div>
@@ -144,31 +146,26 @@
             </div>
           </div>
         </div>
+        <div id="particles-js"></div>
       </section>
-
 
       <section data-anchor="page-2" class="why-us-section">
         <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="why-us-wrapper">
-                <div>
-                  <img src="./assets/img/why-us.png" alt="" />
-                </div>
-                <div>
-                  <img src="./assets/img/why-us-1.png" alt="" />
-                </div>
+          <div class="why-us-wrapper">
+          <div>
+            <div class="row">
+              <div class="col-md-5">
+                <img width="400" src="./assets/img/why-us.png" alt="" />
               </div>
-            </div>
-            <div class="col-md-7 ps-5">
-              <h3
-                class="fw-semi fw-bold mb-4 mt-4 display-6 text-uppercase"
+              <div class="col-md-7 pe-5 text-start">
+                <h3
+                class="fw-semi text-primary fw-bold mb-5 mt-4 display-6 "
               >
                 What Sets Us Apart
               </h3>
               <ul class="list-unstyled why-us-list">
                 <li
-                  class="p-3 mb-3   d-flex align-items-center"
+                  class="p-2 mb-5 d-flex align-items-center"
                 >
                   <span
                     class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-tertiary d-inline-block"
@@ -178,7 +175,7 @@
                   #1 Healthcare system provider in Nepal
                 </li>
                 <li
-                  class="p-3 mb-3   d-flex align-items-center"
+                  class="p-2 mb-5 d-flex align-items-center"
                 >
                   <span
                     class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-secondary d-inline-block"
@@ -188,18 +185,37 @@
                   20 years + experience of delivering healthcare system Solution
                 </li>
                 <li
-                  class="p-3 mb-3   d-flex align-items-center"
+                  class="p-2 mb-5 d-flex align-items-center"
                 >
                   <span
-                    class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-primary d-inline-block"
+                    class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-purple d-inline-block"
                     >
                     <!-- <em class="bi bi-hospital text-light"></em> -->
                   </span>
                   Hospital Management System developed by us has been used by
                   more than 50K plus users
                 </li>
+               
+               
+              </ul>
+              </div>
+            </div>
+          </div> <!---slide1-->
+          <div>
+            <div class="row">
+              <div class="col-md-5">
+                <img width="400" src="./assets/img/why-us-1.png" alt="" />
+              </div>
+              <div class="col-md-7 pe-5 text-start">
+                <h3
+                class="fw-semi fw-bold mb-5 mt-4 text-primary display-6 "
+              >
+                What Sets Us Apart
+              </h3>
+              <ul class="list-unstyled why-us-list">
+               
                 <li
-                  class="p-3 mb-3   d-flex align-items-center"
+                  class="p-2 mb-5 d-flex align-items-center"
                 >
                   <span
                     class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-tertiary d-inline-block"
@@ -210,7 +226,7 @@
 FHIR, HIPAA, ICD-10/11, DICOM and more
                 </li>
                 <li
-                  class="p-3 mb-3   d-flex align-items-center"
+                  class="p-3 mb-5   d-flex align-items-center"
                 >
                   <span
                     class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-secondary d-inline-block"
@@ -221,10 +237,10 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
 15 Years +experienced team members
                 </li>
                 <li
-                  class="p-3 mb-3  d-flex align-items-center"
+                  class="p-3 mb-5  d-flex align-items-center"
                 >
                   <span
-                    class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-primary d-inline-block"
+                    class="shadow-sm wh-50 text-center align-middle me-3 rounded-circle bg-purple d-inline-block"
                     >
                     <!-- <em class="bi bi-hospital text-light"></em> -->
                   </span>
@@ -232,15 +248,18 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                 </li>
                
               </ul>
+              </div>
             </div>
-          </div>
+          </div> <!---slide1-->
+          </div> 
+       
         </div>
       </section>
 
       <section data-anchor="page-3" class="product-section primary-gradient">
         <div class="container-fluid">
           <div class="text-center mb-4">
-            <h2 class="mb-2 text-center fw-bold text-uppercase text-light mb-1 lh-1">
+            <h2 class="mb-2 text-center fw-bold  text-light mb-1 lh-1">
               Products
             </h2>
             <p class="text-light mb-4 pb-2">
@@ -252,7 +271,7 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
 
           <div class="product-section-list row mb-4 ">
            
-            <div class="col-md-3">
+            <div >
               <article class="product-item text-center rounded">
                 <div class="product-icon-box shadow mb-3">
                   <img  src="./assets/img/hcms.png" alt="">
@@ -268,17 +287,17 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                   
                   <div class="mb-3">
                     <p>
-                      Highly Customizable, Fully Integrated Clinical EMR, Billing and Administration for Medium and Large Healthcare Centers. Our complete Healthcare Management System (HCMS) has 32 different integrated modules available at web, desktop, cloud and mobile platform for you to choose from....
+                      Highly Customizable, Fully Integrated Clinical EMR, Billing and Administration for Medium and Large Healthcare Centers. Our complete Healthcare Management System (HCMS)....
                     </p>
                   </div>
-                  <a href="#" class="btn btn-tertiary"
+                  <a href="#" class="btn btn-sm btn-tertiary"
                     >Learn More <em class="bi bi-arrow-right-circle ms-1"></em
                   ></a>
                 </div>
                 <div></div>
               </article>
             </div>
-            <div class="col-md-3">
+            <div >
               <article class="product-item text-center rounded">
                 <div class="product-icon-box shadow mb-3">
                   <img  src="./assets/img/hcmslite.png" alt="">
@@ -286,7 +305,7 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                 <figure class="product-item-head mb-0">
                   <img class="w-100" src="./assets/img/hcms-lite-bg.png" alt="" />
                   <h3 class="fw-bold ">
-                    Health Care Management System Lite
+                    Health Care Management System <span class="dance-script">Lite</span>
                   </h3>
                 </figure>
              
@@ -294,23 +313,23 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                   
                   <div class="mb-3">
                     <p>
-                      HCMSLite is exclusively designed for small and mid-sized hospitals that allows them to improve better patient care and at the same time manage hospital administration, lab and pharmacy well. Whether you are running small and medium hospital in urban areas or you have a healthcare....
+                      HCMS Lite is exclusively designed for small and mid-sized hospitals that allows them to improve better patient care and at the same time manage hospital administration, lab and pharmacy well....
                     </p>
                   </div>
-                  <a href="#" class="btn btn-secondary"
+                  <a href="#" class="btn btn-sm btn-secondary"
                     >Learn More <em class="bi bi-arrow-right-circle ms-1"></em
                   ></a>
                 </div>
                 <div></div>
               </article>
             </div>
-            <div class="col-md-3">
+            <div >
               <article class="product-item text-center rounded">
                 <div class="product-icon-box shadow mb-3">
                   <img  src="./assets/img/lms-logo.png" alt="">
                 </div>
                 <figure class="product-item-head mb-0">
-                  <img class="w-100" src="./assets/img/lms.png" alt="" />
+                  <img class="w-100" src="./assets/img/lms-image.png" alt="" />
                   <h3 class="fw-bold ">
                     Lab Management System
                   </h3>
@@ -320,17 +339,17 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                   
                   <div class="mb-3">
                     <p>
-                      Using our all-in-one LMS allows you to streamline your lab operations, and speed up your research outcomes, saving you time and money. You are not required to have a separate system for different functions of your laboratory and having to transfer information between them, paying....
+                      Using our all-in-one LMS allows you to streamline your lab operations, and speed up your research outcomes, saving you time and money. You are not required to have a separate....
                     </p>
                   </div>
-                  <a href="#" class="btn btn-primary"
+                  <a href="#" class="btn btn-sm btn-primary"
                     >Learn More <em class="bi bi-arrow-right-circle ms-1"></em
                   ></a>
                 </div>
                 <div></div>
               </article>
             </div>
-            <div class="col-md-3">
+            <div >
               <article class="product-item text-center rounded">
                 <div class="product-icon-box shadow mb-3">
                   <img  src="./assets/img/clinico.png" alt="">
@@ -346,17 +365,17 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                   
                   <div class="mb-3">
                     <p>
-                      CLINICLO is cloud based clinic management solution designed to help practice managers run and operate their clinic with a suite of integrated modules. CLINICLO offers a true cloud experience, giving you the ability to access your clinic management system anywhere, anytime.
+                      CLINICLO is cloud based clinic management solution designed to help practice managers run and operate their clinic with a suite of integrated modules. CLINICLO offers a true...
                     </p>
                   </div>
-                  <a href="#" class="btn btn-tertiary"
+                  <a href="#" class="btn btn-sm btn-tertiary"
                     >Learn More <em class="bi bi-arrow-right-circle ms-1"></em
                   ></a>
                 </div>
                 <div></div>
               </article>
             </div>
-            <div class="col-md-3">
+            <div >
               <article class="product-item text-center rounded">
                 <div class="product-icon-box shadow mb-3">
                   <img  src="./assets/img/pharma.png" alt="">
@@ -372,17 +391,17 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                   
                   <div class="mb-3">
                     <p>
-                      Running pharmacy business has never been as easy and profitable as with PHARMACLO. Our cloud-based Pharmacy Management System allows you to increase your business revenue by keeping product availability high, stock levels low & minimize waste.
+                      Running pharmacy business has never been as easy and profitable as with PHARMACLO. Our cloud-based Pharmacy Management System allows you to increase your business revenue ...
                     </p>
                   </div>
-                  <a href="#" class="btn btn-secondary"
+                  <a href="#" class="btn btn-sm btn-secondary"
                     >Learn More <em class="bi bi-arrow-right-circle ms-1"></em
                   ></a>
                 </div>
                 <div></div>
               </article>
             </div>
-            <div class="col-md-3">
+            <div >
               <article class="product-item text-center rounded">
                 <div class="product-icon-box shadow mb-3">
                   <img  src="./assets/img/mero-doctor.png" alt="">
@@ -398,10 +417,10 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                   
                   <div class="mb-4">
                     <p>
-                      Mero Doctor is a cloud-based healthcare service platform for tele-consultation with top doctors, online hospital appointment, EMR and other necessary service for better health management. User can avail the services using mobile app or web-site. Mero Doctor also helps doctors....
+                      Mero Doctor is a cloud-based healthcare service platform for tele-consultation with top doctors, online hospital appointment, EMR and other necessary service for better health management....
                     </p>
                   </div>
-                  <a href="#" class="btn btn-primary"
+                  <a href="#" class="btn btn-sm btn-primary"
                     >Learn More <em class="bi bi-arrow-right-circle ms-1"></em
                   ></a>
                 </div>
@@ -412,29 +431,27 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
             
           </div>
           <div class="text-center pt-3">
-            <a href="#" class="btn btn-secondary"
-                >Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em
-              ></a>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em>
+            </button>
           </div>
         </div>
       </section>
 
       <section data-anchor="page-4" class="feature-section">
-        <div class="container">
+        <div class="container-fluid">
+          <div class="text-center mb-5" >
+            <h2 class=" fw-bold text-primary mb-0">Features</h2>
+            <p class="fw-semi text-dark">Let us partner with you to make a difference</p>
+           </div>
           
           <div class="row">
-            <div class="col-md-5">
-              <img src="./assets/img/nurse.png" alt="">
-            </div>
             <div class="col-md-7 ">
-              <div class="d-flex mt-5 justify-content-between  align-items-center">
-               <div>
-                <h2 class="display-5 fw-bold text-primary mb-0">Features</h2>
-                <p class="lead fw-semi">Let us partner with you to make a difference</p>
-               </div>
-               <a href="#" class="btn btn-secondary btn-lg">Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em></a>
+              <img src="./assets/img/feature-img.png" alt="">
             </div>
-            <div class="hero__title" id="animatedHeading">
+            <div class="col-md-5 ">
+        
+            <div class="hero__title mb-4 pb-2" id="animatedHeading">
               <div class="slick-dupe">Management report accessible through mobile app.</div>
               <div class="slick-dupe">In-house machine interfacing.</div>
               <div class="slick-dupe">A complete intergrated solutions.</div>
@@ -448,6 +465,9 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
               <div class="slick-dupe">Remote teleconsultation service.</div>
               <div class="slick-dupe">Online report and SMS integration.</div>
             </div>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Request a Demo <em class="bi bi-arrow-right-circle ms-1"></em>
+            </button>
              
            
             </div>
@@ -456,11 +476,11 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
       </section>
 
       <section data-anchor="page-5" class="platform-section primary-gradient">
-        <div id="particles-js"></div>
+        <div id="particles-js-1"></div>
         <div class="container">
-          <div class="text-center text-light mb-5">
-            <h2 class="display-5 fw-bold ">Available Platforms</h2>
-            <p class="lead">Choose from various platforms as per your convenience</p>
+          <div class="text-center text-light mb-4">
+            <h2 class="fw-bold ">Available Platforms</h2>
+            <p >Choose from various platforms as per your convenience</p>
           </div>
           <div class="platform-listing">
             <img src="./assets/img/platform-listing.svg" alt="">
@@ -487,152 +507,204 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
       <section data-anchor="page-6" class="client-section">
         <div class="container position-relative">
           <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold ">Clients</h2>
-            <p class="lead">8/10 hospitals and healthcare providers in Nepal trust Midas Health for their operation today</p>
+            <h2 class=" fw-bold ">Clients</h2>
+            <p>8/10 hospitals and healthcare providers in Nepal trust Midas Health for their operation today</p>
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="client-listing position-relative">
+                  <div>
+                    <div class="client-listing-item layeranim1">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hams-hospital.png"></p>
+                      <h6>Hams Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:200px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/bnb-hospital.png"></p>
+                      <h6>B&B Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:400px; top:0">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/sumeru-hospital.png"></p>
+                      <h6>Sumeru Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:600px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/upendradevkota-hospital.png"></p>
+                      <h6>Upendra Devkota Memorial Neuro Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:800px; top:0">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/om-hospital.png"></p>
+                      <h6>Om Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1000px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/medicare-hospital.png"></p>
+                      <h6>Medicare National Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1200px; top:0px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/frontline-hospital.png"></p>
+                      <h6>Frontline Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:0; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/greencity-hospital.png"></p>
+                      <h6>Green City Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:200px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/nepal-cancer-hospital.png"></p>
+                      <h6>Nepal Cancer Hospital and Research Center</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:400px; top:240px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow shadow" src="./assets/img/metro-hospital.png"></p>
+                      <h6>Metro Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:600px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/alka-hospital.png"></p>
+                      <h6>Alka Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:800px; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/fewcity-hospital.png"></p>
+                      <h6>Fewa City Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1000px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/nidan-hospital.png"></p>
+                      <h6>Nidan Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1200px; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/gautam-buddha-hospital.png"></p>
+                      <h6>Gautam Buddha Community Hospital</h6>
+                    </div><!--client-listing-item-->
+                  </div><!---slide 1-->
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="client-listing position-relative">
+                  <div>
+                    <div class="client-listing-item layeranim1">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/chitwan-medical-college.png"></p>
+                      <h6>Chitwan Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:200px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/manipal-hospital.png"></p>
+                      <h6>Manipal Education Group & Medical Group</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:400px; top:0">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/nobel-hospital.png"></p>
+                      <h6>Nobel Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:600px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/teaching-hospital.png"></p>
+                      <h6>College of Medical Science & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:800px; top:0">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/kist.png"></p>
+                      <h6>Kist Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1000px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/kmc.png"></p>
+                      <h6>Kathmandu Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1200px; top:0px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/nmcandteaching.png"></p>
+                      <h6>Nepal Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:0; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/lumbini.png"></p>
+                      <h6>Lumbini Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:200px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/manmohan.png"></p>
+                      <h6>Manmohan Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:400px; top:240px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow shadow" src="./assets/img/hospital/devdaha.png"></p>
+                      <h6>Devdaha Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:600px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/gandaki.png"></p>
+                      <h6>Gandaki Medical College</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:800px; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/janaki-hospital.png"></p>
+                      <h6>Janaki Medical College & Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                   </div>
+                   </div>
+                  </div><!---slide 2-->
+              <div class="carousel-item ">
+                <div class="client-listing position-relative">
+                  <div>
+                    <div class="client-listing-item layeranim1">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/bir-hospital.png"></p>
+                      <h6>Bir Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:200px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/civil-hospital.png"></p>
+                      <h6>Civil Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:400px; top:0">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/pahs.png"></p>
+                      <h6>Pokhara Academy of Health Science</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:600px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/manmohan.png"></p>
+                      <h6>Manmohan Cardio Vascular Transplant Center</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:800px; top:0">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/bp-koirala.png"></p>
+                      <h6>B.P. Koirala Memorial Cancer Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1000px; top:100px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/hetauda-hospital.png"></p>
+                      <h6>Hetauda Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:1200px; top:0px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/bpkihs.png"></p>
+                      <h6>BPKIHS, Dharan</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:0; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/national.png"></p>
+                      <h6>National Trauma Center</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:200px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/tuteaching.png"></p>
+                      <h6>TU Teaching Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:400px; top:240px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow shadow" src="./assets/img/hospital/koshi.png"></p>
+                      <h6>Koshi Zonal Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim1" style="left:600px; top:340px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/kanti.png"></p>
+                      <h6>Kanti Hospital</h6>
+                    </div><!--client-listing-item-->
+                    <div class="client-listing-item layeranim2" style="left:800px; top:300px">
+                      <p class="mb-2"><img alt="" class="rounded-circle shadow" src="./assets/img/hospital/bharatpur.png"></p>
+                      <h6>Bharatpur Hospital, Chitwan</h6>
+                    </div><!--client-listing-item-->
+                   
+                  </div><!---slide 3-->
+                </div>
+              </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
           </div>
          
-          <div class="client-listing position-relative">
         
-            <div>
-              <div class="client-listing-item" >
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:200px; top:100px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:400px; top:0">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/frontlinehospital.png" alt=""></p>
-                <h6>Frontline Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:600px; top:100px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:800px; top:0">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1000px; top:100px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1200px; top:0px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-             
-              <div class="client-listing-item" style="left:0; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:200px; top:400px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:400px; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow shadow" src="./assets/img/frontlinehospital.png" alt=""></p>
-                <h6>Frontline Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:600px; top:400px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:800px; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1000px; top:400px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1200px; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-            </div> <!---slide 1-->
-            <div>
-              <div class="client-listing-item" >
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:200px; top:100px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:400px; top:0">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/frontlinehospital.png" alt=""></p>
-                <h6>Frontline Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:600px; top:100px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:800px; top:0">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1000px; top:100px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1200px; top:0px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-             
-              <div class="client-listing-item" style="left:0; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:200px; top:400px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:400px; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow shadow" src="./assets/img/frontlinehospital.png" alt=""></p>
-                <h6>Frontline Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:600px; top:400px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/upendra.png" alt=""></p>
-                <h6>Upendra Devkota
-                  Memorial and Research
-                  Center</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:800px; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1000px; top:400px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-              <div class="client-listing-item" style="left:1200px; top:300px">
-                <p class="mb-2"><img class="rounded-circle shadow " src="./assets/img/birhospirtal.png" alt=""></p>
-                <h6>Bir Hospital</h6>
-              </div> <!--client-listing-item-->
-            </div> <!---slide 2-->
-           
-          </div>
+         
         </div>
       </section>
 
-      <section data-anchor="page-7"  class="testimonial-section primary-gradient position-relative">
+      <section   class="testimonial-section d-none primary-gradient position-relative">
         <img width="160px" style="left: 90px; top: 70px;" class="testimonial-icon" src="./assets/img/testi-img-2.png" alt="">
         <img width="140px" style="left: 30px; top: 350px;" class="testimonial-icon" src="./assets/img/testi-img-1.png" alt="">
         <img width="160px" style="right: 70px; top: 70px;" class="testimonial-icon" src="./assets/img/testi-img-3.png" alt="">
@@ -661,12 +733,14 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
           </div>
         </div>
       </section>
-      <section data-anchor="page-8" class="footer ">
+      <footer data-anchor="page-7"   class="footer">
         <div class="container footer_container">
           <div class="schedule-block text-dark">
-            <h2 class="fw-bold display-6">We'd Love to Hear from you!</h2>
-            <p class="lead fw-semi  pt-1 pb-2">Whether you are curious about the features, a comprehensive demo, or sharing your problems with us, our team is ready to answer any and all your questions.</p>
-            <a class="btn btn-secondary btn-lg" href="#">Schedule a Meeting</a>
+            <h2 class="fw-bold  text-primary">We'd Love to Hear from you!</h2>
+            <p class=" fw-semi pt-2 pb-2">Whether you are curious about the features, a comprehensive demo, or sharing your problems with us, our team is ready to answer any and all your questions.</p>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Schedule a Meeting <em class="bi bi-arrow-right-circle ms-1"></em>
+            </button>
           </div>
           <div class="row footer_row">
             <div class="col-md-3">
@@ -679,23 +753,23 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
                 <li><a href="#">Testimonials</a></li>      
               </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h5>Products</h5>
               <ul class="list-unstyled">
-                <li><a href="#"><small class="bi bi-chevron-right me-1"></small>  HCMS</a></li>      
-                <li><a href="#"><small class="bi bi-chevron-right me-1"></small>HCMS Lite</a></li>      
-                <li><a href="#"><small class="bi bi-chevron-right me-1"></small>LMS</a></li>      
-                <li><a href="#"><small class="bi bi-chevron-right me-1"></small>Clinico</a></li>      
-                <li><a href="#"><small class="bi bi-chevron-right me-1"></small>Pharmaclo</a></li>      
-                <li><a href="#"><small class="bi bi-chevron-right me-1"></small>Mero Doctor</a></li>      
+                <li><a href="#">HCMS</a></li>      
+                <li><a href="#">HCMS <span class="dance-script">Lite</span></a></li>      
+                <li><a href="#">LMS</a></li>      
+                <li><a href="#">Clinico</a></li>      
+                <li><a href="#">Pharmaclo</a></li>      
+                <li><a href="#">Mero Doctor</a></li>      
               </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4 col-md-4 ps-5">
               <h5>Get in Touch</h5>
               <p class="lh-lg">
                 2nd Floor, IME Complex, Panipokhari, Kathmandu, Nepal <br>
-                Office : +977-1-444444 <br/>
-                Support : +977-1-444444 | 44444 <br/>
+                Office : +977-1-40027736 <br/>
+                Support : +977-1-4002735 <br/>
                 bd@midastechnologies.com.np
   
               </p>
@@ -703,20 +777,19 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
             <div class="col-md-3">
               <h5>Follow Us</h5>
               <div class="social-links">
-                <a href="#"><em class="bi bi-facebook"></em></a>
-                <a href="#"><em class="bi bi-twitter"></em></a>
-                <a href="#"><em class="bi bi-linkedin"></em></a>
+                <a href="https://www.facebook.com/MidasTechnologies" target="_blank"><em class="bi bi-facebook"></em></a>
+                <a href="https://www.linkedin.com/company/midas-technologies-pvt-ltd/" target="_blank"><em class="bi bi-linkedin"></em></a>
               </div>
             </div>
           </div>
           <div class="footer-bottom">
            
              <div class="row align-items-center">
-               <div class="col-md-6">
-                 &copy; 2022 Midas Health Ltd. All Rights Reserved. 
+               <div class="col-md-5">
+                 &copy; 2022 Midas Technologies Ltd. All Rights Reserved. 
                </div>
             
-               <div class="col-md-6 text-end pe-5">
+               <div class="col-md-3 text-center pe-5">
                  <span class="align-middle me-2 mt-2 d-inline-block">A part of</span> <img class="align-middle" src="./assets/img/imegroup.png" alt="">
                </div>  
              </div>
@@ -724,13 +797,102 @@ FHIR, HIPAA, ICD-10/11, DICOM and more
            </div>
         </div>
         
-      </section>
+      </footer>
     </main>
     <div class="loader">
       <img src="./assets/img/loader.gif" alt="">
     </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content request-modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Request Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="requestform" >
+        <div class="row innerrow">
+
+            <div class="col-md-12">
+
+
+               <div class="row">
+               <div class="col-md-6">
+                   <label>Full Name</label>
+                   <input type="text" class="form-control" name="fullname" placeholder="Enter your full name" />
+               </div>
+               <div class="col-md-6">
+                   <label>Contact Number</label>
+                   <input type="text" class="form-control" name="contactnumber" placeholder="Enter your contact number" />
+               </div>
+               </div>
+
+               <div class="row mt-22">
+               <div class="col-md-6">
+                   <label>Email</label>
+                   <input type="text" class="form-control" name="email" placeholder="Enter your email" />
+               </div>
+               <div class="col-md-6">
+                   <label>Job title</label>
+                   <input type="text" class="form-control" name="jobtitle" placeholder="Enter your job title" />
+               </div>
+               </div>
+
+               <div class="row mt-22">
+               <div class="col-md-6">
+                   <label>Company Name</label>
+                   <input type="text" class="form-control" name="companyname" placeholder="Enter your company name" />
+               </div>
+               <div class="col-md-6">
+                   <label>Address</label>
+                   <input type="text" class="form-control" name="address" placeholder="Enter your address" />
+               </div>
+               </div>
+
+               <div class="row mt-22">
+               <div class="col-md-12">
+                   <label>I am interested in</label>
+                   <select class="form-select" name="type">
+    
+                       <option value="HCMS">HCMS</option>
+                       <option value="HCMS Lite">HCMS Lite</option>
+                       <option value="PHARMACLO">PHARMACLO</option>
+                       <option value="CLINICLO">CLINICLO</option>
+                       <option value="LMS">LMS</option>
+                       <option value="MERO DOCTOR">MERO DOCTOR</option>
+                   </select>
+               </div>
+               </div>
+
+               <div class="row mt-22">
+               <div class="col-md-12">
+                   <label>Message</label>
+                   <textarea row="6" class="form-control" name="message" placeholder="Enter your queries..."></textarea>
+               </div>
+               </div>
+
+                
+             </div>
+
+
+        </div>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="submit " class="btn btn-secondary">Submit</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+    <!-- modal ends -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./vendor/pageable/js/pageable.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/countMe.min.js"></script>
     <script src="./vendor/slick/slick.min.js"></script>
     <script src="./vendor/particle/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
